@@ -2,7 +2,7 @@
     {
       "user_id": 1,
       "make_name": "Honda",
-      "car_model": "Civic",
+      "post_model": "Civic",
       "year": 2009,
       "mileage": 12052,
       "color": "red",
@@ -14,7 +14,7 @@
     {
       "user_id": 2,
       "make_name": "Ford",
-      "car_model": "F-150",
+      "post_model": "F-150",
       "year": 1999,
       "mileage": 324009,
       "color": "red",
@@ -26,7 +26,7 @@
     {
       "user_id": 3,
       "make_name": "Toyota",
-      "car_model": "Prius Hybrid",
+      "post_model": "Prius Hybrid",
       "year": 2013,
       "mileage": 82000,
       "color": "white",
@@ -38,7 +38,7 @@
     {
       "user_id": 4,
       "make_name": "Honda",
-      "car_model": "Odyssy",
+      "post_model": "Odyssy",
       "year": 2007,
       "mileage": 160400,
       "color": "silver",
@@ -50,7 +50,7 @@
     {
       "user_id": 5,
       "make_name": "Ford",
-      "car_model": "Mustang",
+      "post_model": "Mustang",
       "year": 2003,
       "mileage": 82000,
       "color": "yellow",
@@ -62,7 +62,7 @@
     {
       "user_id": 6,
       "make_name": "Toyota",
-      "car_model": "Prius",
+      "post_model": "Prius",
       "year": 2017,
       "mileage": 52000,
       "color": "blue",

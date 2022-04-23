@@ -1,37 +1,37 @@
-<!-- html for the homepage, generates list of all cars -->
+<!-- html for the homepage, generates list of all posts -->
 
 <nav class="navbar navbar-light bg-light justify-content-between">
-  <a class="navbar-brand">Search for Cars</a>
+  <a class="navbar-brand">Search for Posts</a>
   <form class="form-inline">
     <input class="form-control mr-sm-2" id="search-input" type="search" placeholder="Search" aria-label="Search">
     <button class="btn btn-outline-success my-2 my-sm-0" id="search-btn" type="submit">Search</button>
   </form>
 </nav>
 
-{{#each cars as |car| }}
-<div class="car-card row mb-4 car">
+{{#each posts as |post| }}
+<div class="post-postd row mb-4 post">
   <div class="col-md-5">
     <h2>
-      <a href="/cars/{{car.id}}">{{car.make_name}} {{car.car_model}}</a>
+      <a href="/posts/{{post.id}}">{{post.make_name}} {{post.post_model}}</a>
     </h2>
     <p>
       <span for="img" aria-label="Price">💲</span>
-      <span class="dollar-amount">{{car.price}}</span></br>
-      <span style="font-weight:bolder" class="year">Year: {{car.year}}</span></br>
-      <span style="font-weight:bolder" class="mileage">Mileage: {{car.mileage}}</span></br>
-      <span style="font-weight:bolder" class="car-color">Color: {{car.color}}</span></br>
-      <span style="font-weight:bolder" class="salvage-title">Salvage Title: {{car.salvage_title}}</span></br>
-      <span style="font-weight:bolder" class="transmission">Transmission: {{car.transmission}}</span>
+      <span class="dollar-amount">{{post.price}}</span></br>
+      <span style="font-weight:bolder" class="year">Year: {{post.year}}</span></br>
+      <span style="font-weight:bolder" class="mileage">Mileage: {{post.mileage}}</span></br>
+      <span style="font-weight:bolder" class="post-color">Color: {{post.color}}</span></br>
+      <span style="font-weight:bolder" class="salvage-title">Salvage Title: {{post.salvage_title}}</span></br>
+      <span style="font-weight:bolder" class="transmission">Transmission: {{post.transmission}}</span>
       
     </p>
-    <p>Posted by {{car.user.name}} on {{format_date car.createdAt}}</p>
+    <p>Posted by {{post.user.name}} on {{format_date post.createdAt}}</p>
   </div>
   <div class="col-md-7">
     
-     <img src={{car.imageUrl}} alt={{car.make_name}} class="listImage"/>
+     <img src={{post.imageUrl}} alt={{post.make_name}} class="listImage"/>
   </div>
 </div>
 {{/each}}
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="./js/car.js"></script>
+<script src="./js/post.js"></script>

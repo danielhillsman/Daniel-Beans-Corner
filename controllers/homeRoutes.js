@@ -1,12 +1,12 @@
 const router = require('express').Router();
-const { Car, User } = require('../models');
+const { Post, User } = require('../models');
 const withAuth = require('../utils/auth');
 const { Op } = require('sequelize');
 
 router.get('/', async (req, res) => {
     try {
-        // get all cars and join with user data
-        const carData = await Car.findAll({
+        // get all posts and join with user data
+        const postData = await Post.findAll({
             include: [
                 {
                     model: User, 
@@ -15,69 +15,69 @@ router.get('/', async (req, res) => {
             ]
         })
         // serialize data so template can read it
-        const cars = carData.map((cars) => cars.get({ plain: true}));
+        const posts = postData.map((posts) => posts.get({ plain: true}));
     
         res.render('homepage', { 
-            cars,
+            posts,
             logged_in : req.session.logged_in
         });
-        // res.json(car)
+        // res.json(post)
     } catch (err) {
         res.status(500).json(err)
     }
 })
 
-// get a car by its id 
-router.get('/cars/:id', async (req, res) => {
+// get a post by its id 
+router.get('/posts/:id', async (req, res) => {
     try {
-        const carData = await Car.findByPk(req.params.id)
+        const postData = await Post.findByPk(req.params.id)
         
         // serialize data so template can read it
-        const car = carData.get({ plain: true});
+        const post = postData.get({ plain: true});
 
-        res.render('singlecarpage', { 
-            car, 
+        res.render('singlepostpage', { 
+            post, 
             logged_in : req.session.logged_in
         });
-        // res.json(car)
+        // res.json(post)
     } catch (err) {
         res.status(500).json(err)
     }
 })
 
-// search a car by the term
+// search a post by the term
 router.get('/search/:term', async (req, res) => {
     try {
-        // be able to find a car based on the term 
-        const carData = await Car.findAll({
+        // be able to find a post based on the term 
+        const postData = await Post.findAll({
             where: {
               [Op.or]: [
                {make_name: { [Op.like]: '%' + req.params.term + '%' }},
-               {car_model: { [Op.like]: '%' + req.params.term + '%' }}
+               {post_model: { [Op.like]: '%' + req.params.term + '%' }}
               ]
             }
           });
         
         // serialize data so template can read it
-        const cars = carData.map((cars) => cars.get({ plain: true}));
+        const posts = postData.map((posts) => posts.get({ plain: true}));
 
-        res.render('carpage', { 
-            cars, 
+        res.render('postpage', { 
+            posts, 
             logged_in : req.session.logged_in
         });
-        // res.json(cars)
+        // res.json(posts)
     } catch (err) {
         res.status(500).json(err)
     }
 })
 
-// route to get the form to post a new car, use withAuth to prevent access to route
-router.get('/new/car', withAuth, async (req, res) => {
+// route to get the form to post a new post, use withAuth to prevent access to route
+router.get('/new/post', withAuth, async (req, res) => {
     try {
-        res.render('newcarformpage', { 
+        res.render('newpostformpage', { 
             logged_in : req.session.logged_in
         });
-        // res.json(car)
+        // res.json(post)
     } catch (err) {
         res.status(500).json(err)
     }

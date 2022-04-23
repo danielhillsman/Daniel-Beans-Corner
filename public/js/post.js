@@ -9,4 +9,3 @@ searchButton.addEventListener('click', function(event) {
     const term = searchInput.value 
     document.location.replace('/search/' + term)
 })
-

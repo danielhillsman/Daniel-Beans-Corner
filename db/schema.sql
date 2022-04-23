@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS usedCars_db;
-CREATE DATABASE usedCars_db;
+DROP DATABASE IF EXISTS danielBeansCorner_db;
+CREATE DATABASE danielBeansCorner_db;

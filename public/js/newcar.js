@@ -1,14 +1,14 @@
-// take value from each element and post to api/cars/new
+// take value from each element and post to api/posts/new
 const submitBtn = document.querySelector("#submit-btn");
 let imageUrl;
 
-// adding a car form for logged in user FUNCTION
+// adding a post form for logged in user FUNCTION
 async function newFormHandler(event) {
     event.preventDefault();
   
     // turning classes and IDs to var
     const make_name = document.querySelector('#make_name').value;
-    const car_model = document.querySelector('#car_model').value;
+    const post_model = document.querySelector('#post_model').value;
     const year = document.querySelector('#year').value;
     const price = document.querySelector('#price').value;
     const mileage = document.querySelector('#mileage').value;
@@ -16,12 +16,12 @@ async function newFormHandler(event) {
     const transmission = document.querySelector('#transmission').value;
     const salvage_title = document.querySelector('.salvage_title:checked') ? "YES": "NO";
   
-    // function to add car details for user
-    const response = await fetch(`/api/cars/new`, {
+    // function to add post details for user
+    const response = await fetch(`/api/posts/new`, {
       method: 'POST',
       body: JSON.stringify({
         make_name,
-        car_model,
+        post_model,
         year,
         mileage,
         price,
@@ -38,14 +38,14 @@ async function newFormHandler(event) {
     if (response.ok) {
       document.location.replace('/');
     } else {
-      alert('Failed to add car.');
+      alert('Failed to add post.');
     }
   }
 // End of Function
 
   //Function to use photos using Cloudinary
   var myWidget = cloudinary.createUploadWidget({
-    cloudName: 'elcaromodelo', 
+    cloudName: 'elpostomodelo', 
     uploadPreset: 'gluoyzsf'}, (error, result) => { 
       if (!error && result && result.event === "success") { 
         imageUrl = result.info.url
