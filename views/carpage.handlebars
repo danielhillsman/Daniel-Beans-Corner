@@ -1,0 +1,32 @@
+<!-- html to generate list of cars based on search-->
+<div>
+    <button class="btn btn-outline-success my-2 my-sm-0" id="back-btn" type="submit">Back</button>
+</div>
+
+{{#each cars as |car| }}
+<div class="car-card row mb-4 car">
+  <div class="col-md-5">
+    <h2>
+      <a href="/cars/{{car.id}}">{{car.make_name}} {{car.car_model}}</a>
+    </h2>
+    <p>
+          <span for="img" aria-label="Price">💲</span>
+      <span class="dollar-amount">{{car.price}}</span></br>
+      <span style="font-weight:bolder" class="year">Year: {{car.year}}</span></br>
+      <span style="font-weight:bolder" class="mileage">Mileage: {{car.mileage}}</span></br>
+      <span style="font-weight:bolder" class="car-color">Color: {{car.color}}</span></br>
+      <span style="font-weight:bolder" class="salvage-title">Salvage Title: {{car.salvage_title}}</span></br>
+      <span style="font-weight:bolder" class="transmission">Transmission: {{car.transmission}}</span>
+      
+    </p>
+    <p>Posted by {{car.user.name}} on {{format_date car.createdAt}}</p>
+  </div>
+  <div class="col-md-7">
+   <img src={{car.imageUrl}} alt={{car.make_name}} class="listImage"/>
+
+  </div>
+</div>
+{{/each}}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="/js/back.js"></script>

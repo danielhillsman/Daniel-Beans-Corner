@@ -1,0 +1,75 @@
+[
+    {
+      "user_id": 1,
+      "make_name": "Honda",
+      "car_model": "Civic",
+      "year": 2009,
+      "mileage": 12052,
+      "color": "red",
+      "salvage_title": "Yes",
+      "transmission": "5-speed automatic",
+      "price": 7200,
+      "imageUrl": "https://res.cloudinary.com/elcaromodelo/image/upload/v1649882031/2020-Honda-Civic-Si-HPT-Sedan-41_uygrn3.jpg"
+    },
+    {
+      "user_id": 2,
+      "make_name": "Ford",
+      "car_model": "F-150",
+      "year": 1999,
+      "mileage": 324009,
+      "color": "red",
+      "salvage_title": "Yes",
+      "transmission": "5-speed manual",
+      "price": 6500,
+      "imageUrl": "https://res.cloudinary.com/elcaromodelo/image/upload/v1649900452/297f521c-46a2-4696-b8e9-3e2b155ebf76_klba2q.png"
+    },
+    {
+      "user_id": 3,
+      "make_name": "Toyota",
+      "car_model": "Prius Hybrid",
+      "year": 2013,
+      "mileage": 82000,
+      "color": "white",
+      "salvage_title": "No",
+      "transmission": "Automatic",
+      "price": 8900,
+      "imageUrl": "https://res.cloudinary.com/elcaromodelo/image/upload/v1649882167/2020-toyota-prius-mmp-1-1565732347.jpg_wyk9sc.jpg"
+    },
+    {
+      "user_id": 4,
+      "make_name": "Honda",
+      "car_model": "Odyssy",
+      "year": 2007,
+      "mileage": 160400,
+      "color": "silver",
+      "salvage_title": "No",
+      "transmission": "6-speed automatic",
+      "price": 8900,
+      "imageUrl": "https://res.cloudinary.com/elcaromodelo/image/upload/v1649900521/bb1351d210_800_uxjcif.jpg"
+    },
+    {
+      "user_id": 5,
+      "make_name": "Ford",
+      "car_model": "Mustang",
+      "year": 2003,
+      "mileage": 82000,
+      "color": "yellow",
+      "salvage_title": "Yes",
+      "transmission": "Automatic",
+      "price": 3500,
+      "imageUrl": "https://res.cloudinary.com/elcaromodelo/image/upload/v1649900572/4cbdd0_80e70c2deab54208898d4d77318c5163_xv4uvw.png"
+    },
+    {
+      "user_id": 6,
+      "make_name": "Toyota",
+      "car_model": "Prius",
+      "year": 2017,
+      "mileage": 52000,
+      "color": "blue",
+      "salvage_title": "No",
+      "transmission": "Automatic",
+      "price": 8900,
+      "imageUrl": "https://images.hgmsites.net/hug/2017-toyota-prius-prime-test-drive-ojai-california-sep-2016_100568169_h.jpg"
+    }
+  ]
+  

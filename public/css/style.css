@@ -1,0 +1,75 @@
+header, .project:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .no-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #ff0000;
+    text-decoration: none;
+    font-size: 100%;
+  }
+  
+  .no-button:hover {
+    color: #ff0000;
+    text-decoration: none;
+  }
+  
+  .dollar-amount {
+    color: #159615;
+    font-weight: bold;
+    margin-left: -5px;
+  }
+
+  .listImage{
+    height: 200px;
+  }
+  .elcaro{
+    font-size: 65px;
+    font-weight: bolder;
+    color: #E63946;
+    text-decoration: none;
+    font-family:'Audiowide', cursive;
+  }
+  .elcaro:hover{
+    text-decoration: none;
+    color: rgb(216, 16, 16);
+    position: relative;
+  }
+h2 a{
+  color: rgb(214, 24, 24);
+  text-decoration: none;
+}
+h2 a:-webkit-any-link{
+  color: #E63946;
+  text-decoration:none;
+}
+h2 a:-webkit-any-link:hover {
+  text-decoration: none;
+  color: rgb(216, 16, 16);
+}
+img{
+  max-width: 270px;
+  height: auto;
+  object-fit: contain;
+}
+.car-card{
+  border-style:solid;
+  background-color: #A8DADC;
+  padding-top: 35px;
+}
+header{
+  background-color: #1D3557;
+}
+body{
+  background-color: #F1FAEE;
+}
+.yes-button{
+  color: #ff0000!important;
+  text-decoration: none;
+}
+#back-btn{
+  margin-bottom: 30px;
+}
