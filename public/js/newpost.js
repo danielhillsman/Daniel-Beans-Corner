@@ -8,11 +8,6 @@ async function newFormHandler(event) {
   
     // turning classes and IDs to var
     const make_name = document.querySelector('#make_name').value;
-    const post_model = document.querySelector('#post_model').value;
-    const year = document.querySelector('#year').value;
-    const price = document.querySelector('#price').value;
-    const mileage = document.querySelector('#mileage').value;
-    const color = document.querySelector('#color').value;
     const transmission = document.querySelector('#transmission').value;
     const salvage_title = document.querySelector('.salvage_title:checked') ? "YES": "NO";
   
@@ -21,11 +16,6 @@ async function newFormHandler(event) {
       method: 'POST',
       body: JSON.stringify({
         make_name,
-        post_model,
-        year,
-        mileage,
-        price,
-        color,
         transmission,
         salvage_title,
         imageUrl,

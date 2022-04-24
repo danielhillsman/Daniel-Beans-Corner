@@ -24,33 +24,13 @@ Post.init(
         type: DataTypes.STRING,
         allowNull: false,
     },
-    post_model: {
-        type: DataTypes.STRING,
-        allowNull: false,
-    },
-    year: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-    },
-    price: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-    },
-    mileage: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-    },
-    color: {
-        type: DataTypes.STRING,
-        allowNull: false,
-    },
     salvage_title: {
         type: DataTypes.STRING,
       
     },
     transmission: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
     },
    imageUrl: {
       type: DataTypes.STRING,
