@@ -8,8 +8,7 @@
       "color": "red",
       "salvage_title": "Yes",
       "transmission": "5-speed automatic",
-      "price": 7200,
-      "imageUrl": "https://res.cloudinary.com/elcaromodelo/image/upload/v1649882031/2020-Honda-Civic-Si-HPT-Sedan-41_uygrn3.jpg"
+      "price": 7200
     },
     {
       "user_id": 2,
@@ -20,8 +19,7 @@
       "color": "red",
       "salvage_title": "Yes",
       "transmission": "5-speed manual",
-      "price": 6500,
-      "imageUrl": "https://res.cloudinary.com/elcaromodelo/image/upload/v1649900452/297f521c-46a2-4696-b8e9-3e2b155ebf76_klba2q.png"
+      "price": 6500
     },
     {
       "user_id": 3,
@@ -32,8 +30,7 @@
       "color": "white",
       "salvage_title": "No",
       "transmission": "Automatic",
-      "price": 8900,
-      "imageUrl": "https://res.cloudinary.com/elcaromodelo/image/upload/v1649882167/2020-toyota-prius-mmp-1-1565732347.jpg_wyk9sc.jpg"
+      "price": 8900
     },
     {
       "user_id": 4,
@@ -44,8 +41,7 @@
       "color": "silver",
       "salvage_title": "No",
       "transmission": "6-speed automatic",
-      "price": 8900,
-      "imageUrl": "https://res.cloudinary.com/elcaromodelo/image/upload/v1649900521/bb1351d210_800_uxjcif.jpg"
+      "price": 8900
     },
     {
       "user_id": 5,
@@ -56,8 +52,7 @@
       "color": "yellow",
       "salvage_title": "Yes",
       "transmission": "Automatic",
-      "price": 3500,
-      "imageUrl": "https://res.cloudinary.com/elcaromodelo/image/upload/v1649900572/4cbdd0_80e70c2deab54208898d4d77318c5163_xv4uvw.png"
+      "price": 3500
     },
     {
       "user_id": 6,

@@ -45,7 +45,7 @@ async function newFormHandler(event) {
 
   //Function to use photos using Cloudinary
   var myWidget = cloudinary.createUploadWidget({
-    cloudName: 'elpostomodelo', 
+    cloudName: 'danielbeanscorner', 
     uploadPreset: 'gluoyzsf'}, (error, result) => { 
       if (!error && result && result.event === "success") { 
         imageUrl = result.info.url
