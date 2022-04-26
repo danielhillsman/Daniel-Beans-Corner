@@ -9,4 +9,10 @@ module.exports = {
         // format large numbers with commas
         return parseInt(amount).toLocaleString();
     },
+    format_time: (time) => {
+        // Format date as h:mm 
+        console.log(time);
+        return time.toLocaleTimeString();
+        
+    }
 }

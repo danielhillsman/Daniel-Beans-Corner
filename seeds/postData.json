@@ -1,40 +1,45 @@
 [
     {
       "user_id": 1,
-      "make_name": "Honda",
+      "make_name": "At Disneyland",
       "salvage_title": "Yes",
-      "transmission": "5-speed automatic"
+      "transmission": "Loving life at Disney right now!!",
+      "imageUrl": "https://res.cloudinary.com/danielbeanscorner/image/upload/v1650924485/disneyland_to7ywb.jpg"
     },
     {
       "user_id": 2,
-      "make_name": "Ford",
+      "make_name": "Walking By The Park",
       "salvage_title": "Yes",
-      "transmission": "5-speed manual"
+      "transmission": "Today I saw several ducks. T'was very cute my friends! I wish you were there to hold them like I did! Nevertheless, here is a pic :).",
+      "imageUrl": "https://res.cloudinary.com/danielbeanscorner/image/upload/v1650924484/ducks_v5fzu2.jpg"
     },
     {
       "user_id": 3,
-      "make_name": "Toyota",
-      "salvage_title": "No",
-      "transmission": "Automatic"
+      "make_name": "Got a Tattoo",
+      "salvage_title": "Yes",
+      "transmission": "Got this really cool tat, bro. Check it out!",
+      "imageUrl":"https://res.cloudinary.com/danielbeanscorner/image/upload/v1650924484/tattoo_dxpznd.jpg"
     },
     {
       "user_id": 4,
-      "make_name": "Honda",
+      "make_name": "Cooking for my mom again",
       "salvage_title": "No",
-      "transmission": "6-speed automatic"
+      "transmission": "Once again, my mother has made me cook for her.",
+      "imageUrl":"https://res.cloudinary.com/danielbeanscorner/image/upload/v1650924484/cooking-mom_ypltsw.jpg"
     },
     {
-      "user_id": 5,
-      "make_name": "Ford",
+      "user_id": 1,
+      "make_name": "flowers",
+      "salvage_title": "No",
+      "transmission": "I took photos of flowers, not much else to say...S",
+      "imageUrl":"https://res.cloudinary.com/danielbeanscorner/image/upload/v1650749081/sample.jpg"
+    },
+    {
+      "user_id": 2,
+      "make_name": "ATTENTION",
       "salvage_title": "Yes",
-      "transmission": "Automatic"
-    },
-    {
-      "user_id": 6,
-      "make_name": "Toyota",
-      "salvage_title": "No",
-      "transmission": "Automatic",
-      "imageUrl": "https://images.hgmsites.net/hug/2017-toyota-prius-prime-test-drive-ojai-california-sep-2016_100568169_h.jpg"
+      "transmission": "I need more attention! I'm reposting the same photo!!!",
+      "imageUrl": "https://res.cloudinary.com/danielbeanscorner/image/upload/v1650924484/ducks_v5fzu2.jpg"
     }
   ]
   

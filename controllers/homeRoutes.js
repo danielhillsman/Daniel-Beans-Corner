@@ -35,37 +35,11 @@ router.get('/posts/:id', async (req, res) => {
         // serialize data so template can read it
         const post = postData.get({ plain: true});
 
-        res.render('singlepostpage', { 
+        res.render('profile', { 
             post, 
             logged_in : req.session.logged_in
         });
         // res.json(post)
-    } catch (err) {
-        res.status(500).json(err)
-    }
-})
-
-// search a post by the term
-router.get('/search/:term', async (req, res) => {
-    try {
-        // be able to find a post based on the term 
-        const postData = await Post.findAll({
-            where: {
-              [Op.or]: [
-               {make_name: { [Op.like]: '%' + req.params.term + '%' }},
-               {post_model: { [Op.like]: '%' + req.params.term + '%' }}
-              ]
-            }
-          });
-        
-        // serialize data so template can read it
-        const posts = postData.map((posts) => posts.get({ plain: true}));
-
-        res.render('postpage', { 
-            posts, 
-            logged_in : req.session.logged_in
-        });
-        // res.json(posts)
     } catch (err) {
         res.status(500).json(err)
     }
@@ -93,5 +67,28 @@ router.get('/login', (req, res) => {
 
     res.render('login');
 });
+
+// Delete
+router.get('/profile', withAuth, async (req, res) => {
+    try {
+      // Find the logged in user based on the session ID
+      const userData = await User.findByPk(req.session.user_id, {
+        attributes: { exclude: ['password'] },
+        include: [{ model: Post }],
+      });
+  
+      const user = userData.get({ plain: true });
+  
+      res.render('profile', {
+        ...user,
+        logged_in: true
+      });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+
+
+
 
 module.exports = router;

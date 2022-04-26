@@ -12,7 +12,7 @@ async function newFormHandler(event) {
     const salvage_title = document.querySelector('.salvage_title:checked') ? "YES": "NO";
   
     // function to add post details for user
-    const response = await fetch(`/api/posts/new`, {
+    const response = await fetch(`/api/post/new`, {
       method: 'POST',
       body: JSON.stringify({
         make_name,
@@ -36,7 +36,7 @@ async function newFormHandler(event) {
   //Function to use photos using Cloudinary
   var myWidget = cloudinary.createUploadWidget({
     cloudName: 'danielbeanscorner', 
-    uploadPreset: 'gluoyzsf'}, (error, result) => { 
+    uploadPreset: 'fannt0nv'}, (error, result) => { 
       if (!error && result && result.event === "success") { 
         imageUrl = result.info.url
         console.log('Done! Here is the image info: ', result.info); 

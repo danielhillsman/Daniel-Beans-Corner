@@ -1,26 +1,24 @@
 header, .project:not(:last-child) {
     border-bottom: 1px solid #ccc;
   }
+
+  .search{
+    color: #ffffff
+  }
   
   .no-button {
     background: none;
     border: none;
     padding: 0;
     cursor: pointer;
-    color: #ff0000;
+    color: #ffffff;
     text-decoration: none;
     font-size: 100%;
   }
-  
+   
   .no-button:hover {
-    color: #ff0000;
+    color: #ac6f6f;
     text-decoration: none;
-  }
-  
-  .dollar-amount {
-    color: #159615;
-    font-weight: bold;
-    margin-left: -5px;
   }
 
   .listImage{
@@ -29,13 +27,13 @@ header, .project:not(:last-child) {
   .elcaro{
     font-size: 65px;
     font-weight: bolder;
-    color: #E63946;
+    color: rgb(160, 31, 31);
     text-decoration: none;
     font-family:'Audiowide', cursive;
   }
   .elcaro:hover{
     text-decoration: none;
-    color: rgb(216, 16, 16);
+    color: rgb(95, 36, 36);
     position: relative;
   }
 h2 a{
@@ -43,31 +41,35 @@ h2 a{
   text-decoration: none;
 }
 h2 a:-webkit-any-link{
-  color: #E63946;
+  color: #7e3038;
   text-decoration:none;
 }
 h2 a:-webkit-any-link:hover {
   text-decoration: none;
-  color: rgb(216, 16, 16);
+  color: rgb(75, 41, 41);
 }
 img{
   max-width: 270px;
   height: auto;
   object-fit: contain;
 }
-.car-card{
+.post-postd{
   border-style:solid;
-  background-color: #A8DADC;
-  padding-top: 35px;
+  background-color: #f3e1e1;
+  padding: 35px;
 }
 header{
-  background-color: #1D3557;
+  background-color: #530202;
 }
 body{
   background-color: #F1FAEE;
 }
 .yes-button{
-  color: #ff0000!important;
+  color: #ffffff!important;
+  text-decoration: none;
+}
+.yes-button:hover{
+  color: #ac6f6f!important;
   text-decoration: none;
 }
 #back-btn{
