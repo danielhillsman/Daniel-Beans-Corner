@@ -35,7 +35,7 @@ router.get('/posts/:id', async (req, res) => {
         // serialize data so template can read it
         const post = postData.get({ plain: true});
 
-        res.render('profile', { 
+        res.render('posts', { 
             post, 
             logged_in : req.session.logged_in
         });
@@ -68,7 +68,7 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
-// Delete
+// Profile page for user logged in
 router.get('/profile', withAuth, async (req, res) => {
     try {
       // Find the logged in user based on the session ID

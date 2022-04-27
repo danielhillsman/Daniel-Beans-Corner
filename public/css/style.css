@@ -1,15 +1,11 @@
 header, .project:not(:last-child) {
     border-bottom: 1px solid #ccc;
   }
-
-  .search{
-    color: #ffffff
-  }
   
   .no-button {
     background: none;
     border: none;
-    padding: 0;
+    padding: 35px;
     cursor: pointer;
     color: #ffffff;
     text-decoration: none;
@@ -27,7 +23,7 @@ header, .project:not(:last-child) {
   .elcaro{
     font-size: 65px;
     font-weight: bolder;
-    color: rgb(160, 31, 31);
+    color: rgb(44, 39, 39);
     text-decoration: none;
     font-family:'Audiowide', cursive;
   }
@@ -57,16 +53,21 @@ img{
   border-style:solid;
   background-color: #f3e1e1;
   padding: 35px;
+  margin: 35px 100px 35px 100px;
 }
 header{
   background-color: #530202;
+  border-bottom:none;
 }
 body{
-  background-color: #F1FAEE;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/1651032174978.jpeg;");
 }
 .yes-button{
   color: #ffffff!important;
   text-decoration: none;
+  padding: 35px;
 }
 .yes-button:hover{
   color: #ac6f6f!important;

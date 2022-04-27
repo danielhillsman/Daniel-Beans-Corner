@@ -18,7 +18,7 @@ router.post('/new', withAuth, async (req, res) => {
 })
 
 // updating posts route by ID
-router.put('/:post_id', (req, res) => {
+router.put('/:id', (req, res) => {
     //Calls the update method on the Book model
     Post.update(
       {
@@ -45,7 +45,7 @@ router.put('/:post_id', (req, res) => {
 
 
 // Deleting a post route by ID
-  router.delete('/:post_id', (req, res) => {
+  router.delete('/:id', (req, res) => {
     // Looks for the books based book_id given in the request parameters
     Post.destroy({
       where: {

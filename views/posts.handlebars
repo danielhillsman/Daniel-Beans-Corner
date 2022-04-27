@@ -3,13 +3,14 @@
     <button class="btn btn-outline-success my-2 my-sm-0" id="back-btn" type="submit">Back</button>
 </div>
 <h2>
-  {{!-- {{post.user_name}}  --}}
+  Welcome to USER: <a style="text-decoration:underline; color:rgb(71, 51, 51)"; >{{post.user_id}}</a> 's Page!
 </h2>
-{{#each posts as |post| }}
+{{#each posts as |user_id|}}
+
 <div class="post-postd row mb-4 post">
   <div class="col-md-5">
     <h2>
-      {{post.user.name}}
+      {{post.make_name}}
     </h2>
     <p>
       <span style="font-weight:bolder" class="salvage-title">Share Worthy? {{post.salvage_title}}</span></br>

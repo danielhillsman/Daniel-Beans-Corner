@@ -1,6 +1,10 @@
 <!-- html to generate list of posts based on search-->
+<div>
+    <button class="btn btn-outline-success my-2 my-sm-0" id="back-btn" type="submit">Back</button>
+</div>
+
 <h2>
-  Welcome {{post.user.name}}
+  Welcome, {{name}}!
 </h2>
 {{#each posts as |post| }}
 <div class="post-postd row mb-4 post">
@@ -13,7 +17,7 @@
       <span class="transmission">{{post.transmission}}</span>
     </p>
     <p style="font-weight:bolder">Posted on {{format_date post.createdAt}} @ {{format_time post.createdAt}}</p>
-      <h5>Delete</h5>
+     <button type="button" class="btn btn-primary" id="updateBtn">Update</button> <button type="button" class="btn btn-danger" id="deleteBtn">Delete</button>
   </div>
   <div class="col-md-7">
    <img src={{post.imageUrl}} alt={{post.make_name}} class="listImage"/>
