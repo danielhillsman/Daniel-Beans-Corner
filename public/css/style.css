@@ -1,7 +1,12 @@
 header, .project:not(:last-child) {
     border-bottom: 1px solid #ccc;
   }
-  
+
+  .welcome{
+    color: white;
+    text-shadow: 3px 3px 3px #000000;
+
+  }
   .no-button {
     background: none;
     border: none;
@@ -62,7 +67,7 @@ header{
 body{
   height: 100%;
   width: 100%;
-  background-image: url("../../assets/1651032174978.jpeg;");
+  background: url("../assets/1651032174978.jpeg");
 }
 .yes-button{
   color: #ffffff!important;

@@ -30,13 +30,22 @@ router.get('/', async (req, res) => {
 // get a post by its id 
 router.get('/posts/:id', async (req, res) => {
     try {
-        const postData = await Post.findByPk(req.params.id)
-        
+        const postData = await Post.findOne({where:{id:req.params.id}, include: User})
+        console.log(postData.get({plain: true}));
+    
+
         // serialize data so template can read it
         const post = postData.get({ plain: true});
 
+        const userPostData = await User.findOne({
+            where:{id:post.user.id}, include: [Post]
+        })
+       const userInfo = userPostData.get({plain: true})
+       console.log(userPostData.get({plain: true}))
+       
         res.render('posts', { 
-            post, 
+            post,
+            userInfo, 
             logged_in : req.session.logged_in
         });
         // res.json(post)
