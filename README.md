@@ -27,7 +27,9 @@ Daniel Hillsman:
   * Email: daniel.loves.junk@gmail.com
 
   ## Screenshots
-  
+  https://raw.githubusercontent.com/danielhillsman/Daniel-Beans-Corner/main/public/assets/images/Screenshot-1.png
+  https://raw.githubusercontent.com/danielhillsman/Daniel-Beans-Corner/main/public/assets/images/Screenshot-2.png
+  https://raw.githubusercontent.com/danielhillsman/Daniel-Beans-Corner/main/public/assets/images/Screenshot-3.png
   
 
   
