@@ -16,12 +16,9 @@ router.post('/new', withAuth, async (req, res) => {
         res.status(400).json(err);
     }
 });
-
-
-
-
 // Deleting a post route by ID
   router.delete('/:id', (req, res) => {
+    console.log('delete button!!!')
     // Looks for the books based book_id given in the request parameters
     Post.destroy({
       where: {
