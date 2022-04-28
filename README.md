@@ -1,4 +1,4 @@
-# Daniel Bean's Corner 🚗
+# Daniel Bean's Corner
 
   ## License
 
