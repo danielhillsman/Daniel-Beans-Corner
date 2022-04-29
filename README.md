@@ -32,7 +32,8 @@
   nodemon
   ````
     
-  ## Usage
+  ## Technology Used
+***.handlebars***, ***CSS***, ***Javascript***, ***Node.js***, ***Express.js***, ***MySQL***, ***Sequelize ORM***, ***Cloudinary Widget***, and ***Heroku***.
 
   ## Questions?
 
