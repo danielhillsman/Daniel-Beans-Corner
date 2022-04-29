@@ -5,6 +5,7 @@
   ![license](https://img.shields.io/static/v1?label=license&message=LABD&color=success)
   
   ## Description
+  This is a social media app where you can POST and DELETE data. You can view all user's posts and even view their profile that has all their posts on it. You can login and view login your own profile, and your own profile page you will have the ability to delete the post. Functionality to add posts include: Post Title, post itself, a checkbox to click if you (the post owner) thinks the post is share worthy, and a photo.
   
   ## Table of Contents
   
