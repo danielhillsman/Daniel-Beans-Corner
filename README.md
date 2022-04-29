@@ -11,7 +11,7 @@
   
   * [Links](#links)
   * [Installation](#installation)
-  * [Usage](#usage)
+  * [Technology-Used](#technology-used)
   * [Questions](#questions)
   * [Screenshots](#screenshots)
 
@@ -32,7 +32,7 @@
   nodemon
   ````
     
-  ## Technology Used
+  ## Technology-Used
 ***CSS***, ***Javascript***, ***Node.js***, ***Express.js***, ***MySQL***, ***Sequelize ORM***, ***Cloudinary Widget***, and ***Heroku***.
 
   ## Questions?
